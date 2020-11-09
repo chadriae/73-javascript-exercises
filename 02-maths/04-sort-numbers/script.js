@@ -17,6 +17,15 @@
 
         // your code here
 
+        var integers = document.getElementById("numbers").value;
+        var array = integers.split(', ');        
+
+        var sorted = array.sort (function(a, b){
+          return a-b});
+
+        window.alert('Numbers not sorted: ' + array + ' Numbers sorted: ' + sorted);
+
+
     });
 
 })();

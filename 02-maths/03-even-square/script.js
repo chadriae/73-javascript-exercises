@@ -14,7 +14,11 @@
     document.getElementById("run").addEventListener("click", function() {
 
         // your code here
-
+        var numbers = [];
+        for (var i = 1; i <= 21; i++){
+            numbers.push(i * i);
+        }
+        window.alert(numbers);
     });
 
 })();
