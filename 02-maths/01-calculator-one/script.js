@@ -14,32 +14,32 @@
 
     document.getElementById("addition").addEventListener("click", function() {
         // perform an addition
-        const x = parseInt(document.getElementById("op-one").value);
-        const y = parseInt(document.getElementById("op-two").value);
+        const x = Number(document.getElementById("op-one").value);
+        const y = Number(document.getElementById("op-two").value);
         const z = x + y;
         alert(z);
     });
 
     document.getElementById("substraction").addEventListener("click", function() {
         // perform an substraction
-        const x = parseInt(document.getElementById("op-one").value);
-        const y = parseInt(document.getElementById("op-two").value);
+        const x = Number(document.getElementById("op-one").value);
+        const y = Number(document.getElementById("op-two").value);
         const z = x - y;
         alert(z);
     });
 
     document.getElementById("multiplication").addEventListener("click", function() {
         // perform an multiplication
-        const x = parseInt(document.getElementById("op-one").value);
-        const y = parseInt(document.getElementById("op-two").value);
+        const x = Number(document.getElementById("op-one").value);
+        const y = Number(document.getElementById("op-two").value);
         const z = x * y;
         alert(z);
     });
 
     document.getElementById("division").addEventListener("click", function() {
         // perform an division
-        const x = parseInt(document.getElementById("op-one").value);
-        const y = parseInt(document.getElementById("op-two").value);
+        const x = Number(document.getElementById("op-one").value);
+        const y = Number(document.getElementById("op-two").value);
         const z = x / y;
         alert(z);
     });
