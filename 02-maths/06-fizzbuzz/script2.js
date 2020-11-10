@@ -1,3 +1,4 @@
+
 /* becode/javascript
  *
  * /02-maths/06-fizzbuzz/script.js - 2.6: fizzbuzz
@@ -12,20 +13,20 @@
 (function() {
 
     // your code here
-    for (var x=1; x <= 100; x++) {
-        if(x % 5 === 0 && x % 3  === 0)
+    for (var i = 1; i < 100; i++) {
+        if(i % 5 === 0 && i % 3  === 0)
         {
-            console.log('fizzbuzz');
+            console.log(`${i}: fizzbuzz`);
         }
-        else if(x % 3  === 0)
+        else if(i % 3  === 0)
         {
-            console.log('fizz');
+            console.log(`${i}: fizz`);
         }
-        else if(x % 5  === 0)
+        else if(i % 5  === 0)
         {
-            console.log('buzz');
+            console.log(`${i}: buzz`);
         }
-        else console.log(x);
-    } 
+        else console.log(i);
+    }
 
 })();
