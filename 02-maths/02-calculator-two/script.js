@@ -16,26 +16,26 @@
         // only works with var, not const or let?
         switch (operation) {
         case 'addition' :
-            var x = parseInt(document.getElementById("op-one").value);
-            var y = parseInt(document.getElementById("op-two").value);
+            var x = Number(document.getElementById("op-one").value);
+            var y = Number(document.getElementById("op-two").value);
             var result = x + y;
             alert(result);
             break;
         case 'substraction' :
-            var x = parseInt(document.getElementById("op-one").value);
-            var y = parseInt(document.getElementById("op-two").value);
+            var x = Number(document.getElementById("op-one").value);
+            var y = Number(document.getElementById("op-two").value);
             var result = x - y;
             alert(result);
             break;
         case 'multiplication' :
-            var x = parseInt(document.getElementById("op-one").value);
-            var y = parseInt(document.getElementById("op-two").value);
+            var x = Number(document.getElementById("op-one").value);
+            var y = Number(document.getElementById("op-two").value);
             var result = x * y;
             alert(result);
             break;
         case 'division' :
-            var x = parseInt(document.getElementById("op-one").value);
-            var y = parseInt(document.getElementById("op-two").value);
+            var x = Number(document.getElementById("op-one").value);
+            var y = Number(document.getElementById("op-two").value);
             var result = x / y;
             alert(result);
             break;
