@@ -17,13 +17,14 @@
 
         // your code here
 
-        var integers = document.getElementById("numbers").value;
-        var array = integers.split(', ');        
+        const integers = document.getElementById("numbers").value;
+        const array = integers.split(', ');        
 
-        var sorted = array.sort (function(a, b){
-          return a-b});
+        const sorted = array.sort (function(a, b) {
+          return a-b
+        });
 
-        window.alert('Numbers not sorted: ' + array + ' Numbers sorted: ' + sorted);
+        alert('Numbers not sorted: ' +  integers + '\nNumbers sorted: ' + sorted);
 
 
     });

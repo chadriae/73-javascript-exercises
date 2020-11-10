@@ -13,10 +13,10 @@
 
   // your code here
   if (confirm("Do you want some cake?")) {
-    window.alert("Congratulations!");
+    alert("Congratulations!");
   }
 
   else {
-    window.alert("More for me then! :p");
+    alert("More for me then! :p");
   }
 })();

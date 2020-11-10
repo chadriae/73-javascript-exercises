@@ -14,34 +14,33 @@
 
     document.getElementById("addition").addEventListener("click", function() {
         // perform an addition
-        var x = parseInt(document.getElementById("op-one").value);
-        var y = parseInt(document.getElementById("op-two").value);
-        var z = x + y;
-        //document.getElementById("addition").innerHTML = z; to change button to result
-        window.alert(z);
+        const x = parseInt(document.getElementById("op-one").value);
+        const y = parseInt(document.getElementById("op-two").value);
+        const z = x + y;
+        alert(z);
     });
 
     document.getElementById("substraction").addEventListener("click", function() {
         // perform an substraction
-        var x = parseInt(document.getElementById("op-one").value);
-        var y = parseInt(document.getElementById("op-two").value);
-        var z = x - y;
-        window.alert(z);
+        const x = parseInt(document.getElementById("op-one").value);
+        const y = parseInt(document.getElementById("op-two").value);
+        const z = x - y;
+        alert(z);
     });
 
     document.getElementById("multiplication").addEventListener("click", function() {
         // perform an multiplication
-        var x = parseInt(document.getElementById("op-one").value);
-        var y = parseInt(document.getElementById("op-two").value);
-        var z = x * y;
-        window.alert(z);
+        const x = parseInt(document.getElementById("op-one").value);
+        const y = parseInt(document.getElementById("op-two").value);
+        const z = x * y;
+        alert(z);
     });
 
     document.getElementById("division").addEventListener("click", function() {
         // perform an division
-        var x = parseInt(document.getElementById("op-one").value);
-        var y = parseInt(document.getElementById("op-two").value);
-        var z = x / y;
-        window.alert(z);
+        const x = parseInt(document.getElementById("op-one").value);
+        const y = parseInt(document.getElementById("op-two").value);
+        const z = x / y;
+        alert(z);
     });
 })();

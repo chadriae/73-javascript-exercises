@@ -13,6 +13,7 @@
     // to get the value of an input: document.getElementById("element-id").value
     const performOperation = operation => {
         // perform the operation
+        // only works with var, not const or let?
         switch (operation) {
         case 'addition' :
             var x = parseInt(document.getElementById("op-one").value);

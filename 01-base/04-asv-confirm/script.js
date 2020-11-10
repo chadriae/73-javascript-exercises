@@ -17,12 +17,12 @@
     var town = prompt("What town do you live in?");
 
     if (confirm("Are you " + age + " years old, " + gender + " and do you live in " + town + "?")) {
-        window.alert("Thank you for your information.")
+        alert("Thank you for your information.")
     }
 
     else {
-        window.alert("Start over again, please.");
-        window.location.reload();
+        alert("Start over again, please.");
+        location.reload();
     }
 
 }

@@ -12,6 +12,6 @@
 (function() {
 
     // your code here
-    var name = prompt("Enter your name here");
-    window.alert("Hello " + name + "!");
+    const name = prompt("Enter your name here");
+    alert("Hello " + name + "!");
 })();
