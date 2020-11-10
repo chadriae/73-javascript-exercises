@@ -17,6 +17,20 @@
 
         // your code here
 
+        const x = parseInt(document.getElementById("number").value);
+
+
+        function factorial(x) {
+            let rval = 1;
+            for (let i = 1; i <= x; i++) {
+                rval = rval * i;
+            }
+            return rval;
+        }
+
+        alert(`The number you wrote is: ${x}
+        \nThe factorial of that number is: ${factorial(x)}`);
+
     });
 
 })();

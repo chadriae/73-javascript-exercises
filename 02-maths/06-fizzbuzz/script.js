@@ -12,5 +12,23 @@
 (function() {
 
     // your code here
+    for (var x=1; x <= 100; x++) {
+        var skip = 0;
+        if (x % 3 == 0 && x % 5 == 0) {
+            console.log('fizzbuzz');
+            skip = 1;
+        }
+        if (x % 3 == 0) {
+            console.log('fizz');
+            skip = 1;
+        }
+        if (x % 5 == 0) {
+            console.log('buzz');
+            skip = 1;
+        }
+        if (!skip) {
+            console.log(x);
+        }
+    }
 
 })();
