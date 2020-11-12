@@ -15,4 +15,15 @@
 
     // your code here
 
+    const hour = new Date().getHours();
+    const minute = new Date().getMinutes();
+    const weekday = new Date().getDay();
+    const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    const dayofthemonth = new Date().getDate();
+    const month = new Date().getMonth();
+    const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+    const yearnow = new Date().getFullYear();
+
+    document.getElementById("target").innerHTML = `${days[weekday]}  ${dayofthemonth} ${months[month]} ${yearnow}, ${hour}h${minute}`;
+
 })();
