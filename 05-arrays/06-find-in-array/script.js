@@ -90,5 +90,23 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", function(){
+        //search for Jean Dupont and return email address
+        function findInArray6(person) {
+            return person.firstname === "Jean" && person.lastname === "Dupont";
+        }
+        let result = people.find(findInArray6);
+        console.log(result.email);
 
+        //shorter version
+        const isJeanDupont = person => 
+        person.firstname == "Jean"  && person.lastname == "Dupont";
+        let person = people.find(isJeanDupont);
+        console.log(person.email);
+
+        //search for Jean Dupont and return index in array
+        const targetIndex = people.findIndex(item => item.firstname === "Jean" && item.lastname === "Dupont");
+        console.log('index', targetIndex);
+
+    });
 })();
