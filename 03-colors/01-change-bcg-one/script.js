@@ -13,19 +13,19 @@
 
     // your code here
     document.getElementById("red").addEventListener("click", function(){
-        var color = '#ff0000';
-        document.body.style.backgroundColor = color;
+        //var color = '#ff0000';
+        document.body.style.backgroundColor = 'red';
     })
     document.getElementById("green").addEventListener("click", function(){
-        var color = '#00ff40';
-        document.body.style.backgroundColor = color;
+        //var color = '#00ff40';
+        document.body.style.backgroundColor = '#00ff40';
     })
     document.getElementById("yellow").addEventListener("click", function(){
-        var color = '#ffff00';
-        document.body.style.backgroundColor = color;
+        //var color = '#ffff00';
+        document.body.style.backgroundColor = '#ffff00';
     })
     document.getElementById("blue").addEventListener("click", function(){
-        var color = '#0080ff';
-        document.body.style.backgroundColor = color;
+        //var color = '#0080ff';
+        document.body.style.backgroundColor = '#0080ff';
     })
 })();

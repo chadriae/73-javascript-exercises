@@ -13,7 +13,7 @@
 
     // your code here
     document.getElementById("run").addEventListener("click", function(){
-        const input = document.getElementById("color").value;
+        let input = document.getElementById("color").value;
         console.log(input);
         document.body.style.backgroundColor = input;
     })

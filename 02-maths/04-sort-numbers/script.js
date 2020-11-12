@@ -20,7 +20,7 @@
         const integers = document.getElementById("numbers").value;
         const array = integers.split(', ');        
 
-        const sorted = array.sort (function(a, b) {
+        var sorted = array.sort (function(a, b) {
           return a-b
         });
 
