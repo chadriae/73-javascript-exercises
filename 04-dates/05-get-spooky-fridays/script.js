@@ -18,8 +18,8 @@
         let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
         for (var month=0; month<12; month++) {
-            var d = new Date(givenyear, month, 13);
-            if(d.getDay() == 5){
+            var givenDate = new Date(givenyear, month, 13);
+            if(givenDate.getDay() == 5){
               spookyMonth.push(months[month]);
            }
         }
