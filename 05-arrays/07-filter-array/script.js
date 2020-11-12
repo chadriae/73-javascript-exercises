@@ -90,5 +90,13 @@
     ];
 
     // your code here
-
+    document.getElementById("run").addEventListener("click", function(){
+        //search for people older than 18 years old
+        const adults = people.filter(function(adult) {
+            return adult.age > 18;
+        });
+        adults.forEach((element) => {
+            console.log(`${element.firstname} ${element.lastname}`);
+          });
+    });
 })();
