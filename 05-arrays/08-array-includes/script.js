@@ -28,4 +28,10 @@
 
     // your code here
 
+    let isApple = fruits.includes("apple");
+
+    document.getElementById("run").addEventListener("click", function(){
+        console.log(isApple);
+    })
+
 })();
