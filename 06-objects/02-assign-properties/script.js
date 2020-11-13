@@ -27,8 +27,6 @@
         user: null,
     };
     // your code here
-    for (let i = 0; i < computers.length; i++) {
-        const newItem = Object.assign({}, defaultProps, { location: computers[i] });
-    }
-    console.log(computers);
+
+    
 })();
