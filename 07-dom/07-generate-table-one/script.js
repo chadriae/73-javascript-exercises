@@ -15,28 +15,26 @@
     const targetDiv = document.querySelector("#target");
 
     // creates a <table> element and a <tbody> element
-    var tbl = document.createElement("table");
-    var tblBody = document.createElement("tbody");
+    const tbl = document.createElement("table");
+    const tblBody = document.createElement("tbody");
 
     // creating all cells
-    for (var i = 0; i < 1; i++) {
+    for (let i = 0; i < 10; i++) {
         // creates a table row
-        var row = document.createElement("tr");
+        let row = document.createElement("tr");
 
-    for (var j = 0; j < 10; j++) {
-      var cell = document.createElement("td");
-      row.appendChild(cell);
+      for (let j = 0; j < 10; j++) {
+        const cell = document.createElement("td");
+        row.appendChild(cell);
+      }
+      // add the row to the end of the table body
+      tblBody.appendChild(row);
     }
-    // add the row to the end of the table body
-    tblBody.appendChild(row);
-  }
 
-  // put the <tbody> in the <table>
-  tbl.appendChild(tblBody);
-  // appends <table> into <body>
-  targetDiv.appendChild(tbl);
-  // sets the border attribute of tbl to 2;
-  tbl.setAttribute("border", "2");
+    // put the <tbody> in the <table>
+    tbl.appendChild(tblBody);
+    // appends <table> into <body>
+    targetDiv.appendChild(tbl);
 
 
 

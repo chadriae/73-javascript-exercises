@@ -46,6 +46,10 @@
         $btn.addEventListener(
             "click",
             () => (performOperation($btn.id), false),
+            console.log(performOperation);
+
         ),
     );
+
+    console.log(performOperation);
 })();

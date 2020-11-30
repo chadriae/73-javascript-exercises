@@ -90,7 +90,9 @@
     ];
 
     // your code here
-    document.getElementById("run").addEventListener("click", function(){
+    const test = document.querySelector("#run");
+
+    test.addEventListener("click", function(adult){
         //search for people older than 18 years old
         const adults = people.filter(function(adult) {
             return adult.age > 18;

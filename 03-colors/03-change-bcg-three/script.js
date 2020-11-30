@@ -12,6 +12,19 @@
 (function() {
 
     // your code here
+
+    // Alternative code
+    //function randomColor() {
+    //const hexCode = "0123456789ABCDEF";
+    //let color = "#";
+    //for (let i = 0; i < 6; i++) {
+    //    color = color + hexCode[Math.floor(Math.random() * 16)];
+    //}
+    //return color;
+    //}
+
+
+
     document.getElementById("run").addEventListener("click", function(){
         let r = Math.floor(Math.random() * 256);
         let g = Math.floor(Math.random() * 256);
