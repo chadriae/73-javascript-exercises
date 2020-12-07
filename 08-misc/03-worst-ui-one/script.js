@@ -12,5 +12,11 @@
 (function() {
 
     // your code here
+    let sliderValue = document.querySelector("#slider");
+    let targetText = document.querySelector("#target");
+
+    slider.onchange = () => {
+        targetText.innerHTML = `0${sliderValue.value}`;
+    }
 
 })();
