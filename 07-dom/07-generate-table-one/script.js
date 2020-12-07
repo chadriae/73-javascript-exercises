@@ -10,7 +10,6 @@
 // You will have time to focus on it later.
 
 (function() {
-
     // your code here
     const targetDiv = document.querySelector("#target");
 
@@ -35,7 +34,4 @@
     tbl.appendChild(tblBody);
     // appends <table> into <body>
     targetDiv.appendChild(tbl);
-
-
-
 })();
