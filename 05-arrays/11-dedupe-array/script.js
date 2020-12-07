@@ -29,5 +29,8 @@
     ];
 
     // your code here
-
+    document.querySelector("#run").addEventListener("click", function () {
+        let noDuplicates = [...new Set(fruits)];
+        console.log(noDuplicates);
+    })
 })();
