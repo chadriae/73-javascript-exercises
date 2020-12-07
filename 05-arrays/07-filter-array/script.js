@@ -90,15 +90,13 @@
     ];
 
     // your code here
-    const test = document.querySelector("#run");
-
-    test.addEventListener("click", function(adult){
+    document.querySelector("#run").addEventListener("click", function(adult){
         //search for people older than 18 years old
         const adults = people.filter(function(adult) {
             return adult.age > 18;
         });
         adults.forEach((element) => {
-            console.log(`${element.firstname} ${element.lastname}`);
+            console.log(`${element.firstname} ${element.lastname} ${element.age}`);
           });
     });
 })();
