@@ -27,6 +27,10 @@
         user: null,
     };
     // your code here
-
-    
+    document.querySelector("#run").addEventListener("click", function() {
+        for (i = 0; i < computers.length; i++) {
+            computers [i] = {...defaultProps,...computers[i]};
+        }
+        console.log(computers);
+    })
 })();
