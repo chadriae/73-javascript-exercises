@@ -24,8 +24,5 @@
             setTimeout(typeWriter, speed);
         }
     }
-    
     typeWriter();
-
-
 })();
