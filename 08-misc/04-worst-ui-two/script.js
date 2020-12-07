@@ -11,6 +11,31 @@
 
 (function() {
 
-    // your code here
-
+        // your code here
+    Array.from(document.querySelectorAll('.actions > button')).forEach((btn) => {
+        btn.addEventListener('click', () => {
+            let minValue = Number(btn.dataset.min);
+            let maxValue = Number(btn.dataset.max);
+            let value = Number(btn.textContent);
+                if (value < maxValue) {
+                    value++;
+                } else {
+                    value = minValue;
+                }
+                if (value < 9) {
+                    value = `0${value}`;
+                }
+            btn.textContent = `${value}`;
+            updateNumber();
+        });
+    });
+          
+    const updateNumber = () => {
+        let phoneNr = '0';
+        Array.from(document.querySelectorAll('.actions > button')).forEach((btn) => {
+                phoneNr += btn.textContent;
+            }
+        );
+        document.getElementById('target').textContent = phoneNr;
+    };
 })();
