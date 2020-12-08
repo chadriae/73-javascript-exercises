@@ -43,12 +43,15 @@
         let randomNumberBirds = Math.floor(Math.random() * birds.length);
         let randomNumberAdj = Math.floor(Math.random() * adjectives.size);
         const randomAdj = Array.from(adjectives)[randomNumberAdj];
+        const targetTxt = document.querySelector("#target");
 
         if ((birds[randomNumberBirds]["num"]) > 1) {
         console.log(`A few ${randomAdj} ${birds[randomNumberBirds]["name"]}s`);
+        targetTxt.innerHTML = `A few ${randomAdj} ${birds[randomNumberBirds]["name"]}s`;
         }
         else {
             console.log(`A ${randomAdj} ${birds[randomNumberBirds]["name"]}`);
+            targetTxt.innerHTML = `A ${randomAdj} ${birds[randomNumberBirds]["name"]}`;
         }
-    })
+    });
 })();
